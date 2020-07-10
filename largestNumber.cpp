@@ -21,9 +21,20 @@ void print(vector < string > &vstr){
     }
 }
 
-vector < string > solution(vector < int > &v){
+void solution(vector < int > &v){
 
     vector < string > vstr;
+    int flag = 0;
+    int k = 0;
+    while(k < v.size()){
+        if(v[k++] != 0){
+            flag = 1;
+        }
+    }
+    cout<<"flag"<<flag;
+    if (flag == 0){
+        cout<< "0";
+    } else {
     for(int i = 0; i < v.size(); i++){
         vstr.push_back(to_string(v[i]));
     }
@@ -32,17 +43,17 @@ vector < string > solution(vector < int > &v){
 
     print(vstr);
 
-    return vstr;
-
+    
+    }
 }
 
 int main(){
 
     vector < int > v;
-    v.push_back(54);
-    v.push_back(546);
-    v.push_back(548);
-    v.push_back(60);
+    v.push_back(0);
+    v.push_back(0);
+    v.push_back(1);
+    v.push_back(0);
 
     solution(v);
     return 0;
