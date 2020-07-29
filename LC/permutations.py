@@ -13,9 +13,10 @@ def permutation(lst):
         remLst = lst[:i] + lst[i+1:]
         
         for p in permutation(remLst):
-            l.append([m] + p)
+            if ([m] + p) not in l:
+                l.append([m] + p)
             
     return l
 
-k = permutation(["word","good","best","word"])
-print(k)
+k = permutation([2,2,7,5,4,3,2,2,1])
+print(sorted(k))
