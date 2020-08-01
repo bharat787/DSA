@@ -1,3 +1,5 @@
+# Based on kadane's algorithm
+
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         max_global = max_cur =nums[0]
