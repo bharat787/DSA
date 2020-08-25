@@ -3,7 +3,7 @@ class Solution:
         """
         :type matrix: List[List[int]]
         :type target: int
-        :rtype: bool
+        : rtype: bool
         """
         if len(matrix) == 0:
             return False
