@@ -3,26 +3,7 @@ from itertools import permutations
 def ArrangementSum(n):
     
     arr = [i for i in range(n)]
-    
-    # def permute(arr):
-    #     if len(arr) == 0:
-    #         return []
             
-    #     if len(arr) == 1:
-    #         return [lst]
-            
-    #     l = []
-        
-    #     for i in range(len(arr)):
-    #         m = arr[i]
-            
-    #         remLst = arr[:i] + arr[i+1:]
-            
-    #         for p in permute(remLst):
-    #             l.append([m] + p)
-    #     return l
-        
-    #perms = permute(arr)
     perms = list(permutations(range(1, n+1)))
     print(perms)
         
